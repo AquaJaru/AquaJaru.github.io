@@ -212,8 +212,80 @@
 
         </div>
       </div>
+  
 
     </section>
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Susisiekite su manimi</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="200">
+
+    <form id="contactForm" class="contact-form">
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Vardas</label>
+          <input type="text" class="form-control" name="vardas" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Pavardė</label>
+          <input type="text" class="form-control" name="pavarde" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">El. paštas</label>
+          <input type="email" class="form-control" name="elpastas" required>
+        </div>
+        <div class="col-md-6 mb-3">
+  <label class="form-label">Telefono numeris</label>
+  <input type="tel" class="form-control" name="telefonas" placeholder="+3706xxxxxxx" required>
+</div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Adresas</label>
+        <input type="text" class="form-control" name="adresas" required>
+      </div>
+
+      <h4 class="mt-4">Vertinimo klausimai (1–10)</h4>
+
+      <div class="mb-3">
+        <label class="form-label">Klausimas 1</label>
+        <input type="range" min="1" max="10" value="5" class="form-range" name="q1">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Klausimas 2</label>
+        <input type="range" min="1" max="10" value="5" class="form-range" name="q2">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Klausimas 3</label>
+        <input type="range" min="1" max="10" value="5" class="form-range" name="q3">
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+    </form>
+
+    <div id="formOutput" class="mt-4"></div>
+
+  </div>
+</section>
+<!-- Formos output -->
+<div id="formOutput"></div>
+
+<!-- Sėkmingo pateikimo pop-up -->
+<div id="successPopup" class="success-popup">
+    Duomenys pateikti sėkmingai!
+</div>
+
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -326,6 +398,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 </body>
 
