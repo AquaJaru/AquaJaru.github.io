@@ -285,9 +285,48 @@
 <div id="successPopup" class="success-popup">
     Duomenys pateikti sėkmingai!
 </div>
+<!-- Mano zaidimas -->
+ 
+<section id="game-section">
+
+    <h2>Mano Žaidimas</h2>
 
 
-    <!-- Services Section -->
+    <div class="difficulty-select">
+        <label for="difficulty">Pasirinkite sudėtingumą:</label>
+        <select id="difficulty">
+            <option value="easy">Lengvas (3x4)</option>
+            <option value="medium">Vidutinis (4x4)</option>
+            <option value="hard">Sunkus (4x5)</option>
+        </select>
+    </div>
+
+    <div class="stats">
+        <p>Laikas: <span id="timer">0</span>s</p>
+        <p>Geriausias (Lengvas): <span id="best-easy">-</span></p>
+        <p>Geriausias (Vidutinis): <span id="best-medium">-</span></p>
+        <p>Geriausias (Sunkus): <span id="best-hard">-</span></p>
+
+        <p>Ėjimai: <span id="moves">0</span></p>
+        <p>Sutapusių porų: <span id="matches">0</span></p>
+    </div>
+
+
+    <div id="game-board" class="game-board">
+    
+    </div>
+
+
+    <div class="game-controls">
+        <button id="start-game">Start</button>
+        <button id="reset-game">Atnaujinti</button>
+    </div>
+
+    <div id="win-message" class="win-message"></div>
+
+    
+</section>
+
     <section id="services" class="services section">
 
       <div class="container section-title" data-aos="fade-up">
@@ -399,6 +438,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/custom.js"></script>
+    <script src="assets/js/game.js"></script>
 
 </body>
 
